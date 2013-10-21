@@ -1,0 +1,6 @@
+# User specific & automatically generated files #
+#################################################
+/app/Config/database.php
+/app/tmp
+/Plugin
+/vendor
