@@ -45,6 +45,9 @@ class AppController extends Controller {
 		'RequestHandler',
 		'Session',
 		'Crud.Crud' => [
+			'actions' => [
+				'index', 'add', 'edit', 'view', 'delete'
+			],
 			'listeners' => [
 				'Crud.Api',
 				'Crud.ApiPagination',
