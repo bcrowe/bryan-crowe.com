@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "95844a0303fd430158116f82e04a79fb",
+    "hash": "4050ab9951cb78ecc58f710645a594e3",
     "packages": [
         {
             "name": "cakephp/cakephp",
@@ -159,6 +159,47 @@
                 "update"
             ],
             "time": "2013-09-17 19:43:20"
+        },
+        {
+            "name": "slywalker/boost_cake",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slywalker/cakephp-plugin-boost_cake.git",
+                "reference": "ab217c0679cb29486fdd520525551bc21f28ec8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slywalker/cakephp-plugin-boost_cake/zipball/ab217c0679cb29486fdd520525551bc21f28ec8d",
+                "reference": "ab217c0679cb29486fdd520525551bc21f28ec8d",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "twitter/bootstrap": "Bootstrap for Twitter"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yasuo Harada",
+                    "email": "slywalker.net@gmail.com"
+                }
+            ],
+            "description": "BoostCake is a plugin for CakePHP using Bootstrap",
+            "homepage": "http://slywalker.github.io/cakephp-plugin-boost_cake/",
+            "keywords": [
+                "bootstrap",
+                "cakephp",
+                "twitter"
+            ],
+            "time": "2013-10-22 16:35:01"
         }
     ],
     "packages-dev": null,
