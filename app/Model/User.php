@@ -1,14 +1,12 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('Security', 'Utility');
 /**
  * User Model
  *
  * @property Post $Post
  */
 class User extends AppModel {
-
-
-	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
  * hasMany associations
@@ -30,5 +28,13 @@ class User extends AppModel {
 			'counterQuery' => ''
 		)
 	);
+
+	public function beforeSave($options = array()) {
+		if (isset($this->data['User']['password'])) {
+			$hash = Security::hash($this->data['User']['password'], 'blowfish');
+			$this->data['User']['password'] = $hash;
+		}
+		return true;
+	}
 
 }
