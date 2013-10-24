@@ -54,7 +54,19 @@ class AppController extends Controller {
 				'Crud.ApiQueryLog'
 			]
 		],
-		'Paginator' => ['settings' => ['paramType' => 'querystring', 'limit' => 30]]
+		'Paginator' => ['settings' => ['paramType' => 'querystring', 'limit' => 30]],
+		'Auth' => [
+			'loginRedirect'  => ['controller' => 'posts', 'action' => 'index'],
+			'logoutRedirect' => '/',
+			'loginAction'    => ['controller' => 'users', 'action' => 'login'],
+			'authorize'      => ['Controller'],
+			'authError'      => 'You need to be logged in to view this page.',
+			'authenticate'   => ['Blowfish']
+		]
 	];
+
+	public function isAuthorized($user) {
+		return false;
+	}
 
 }
