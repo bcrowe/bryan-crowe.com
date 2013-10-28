@@ -9,7 +9,15 @@ App::uses('AppController', 'Controller');
 class PostsController extends AppController {
 
 	public function beforeFilter() {
-		$this->Auth->allow(['index']);
+		$this->Auth->allow(['index', 'add', 'posts']);
+	}
+
+	public function posts() {
+		$this->Paginator->settings = array(
+			'limit' => 10, 
+		);
+		$posts = $this->Paginator->paginate('Post');
+		$this->set(compact('posts'));
 	}
 
 }

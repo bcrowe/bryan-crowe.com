@@ -1,0 +1,28 @@
+#name {
+	font-size: 26px;
+	color: #E5E5E5;
+	text-align: center;
+}
+
+#name span.light-blue {
+	color: #00CCFF;
+}
+
+#photo {
+	padding-top: 10px;
+	text-align: center;
+}
+
+#photo img {
+	width: 150px;
+	height: 150px;
+}
+
+img.thirty-two {
+	width: 32px;
+	height: 32px;
+}
+
+#external-links {
+	text-align: center;
+}
