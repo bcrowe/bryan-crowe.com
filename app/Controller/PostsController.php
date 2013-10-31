@@ -13,10 +13,7 @@ class PostsController extends AppController {
 	}
 
 	public function posts() {
-		$this->Paginator->settings = array(
-			'limit' => 3, 
-		);
-		$posts = $this->Paginator->paginate('Post');
+		$posts = $this->Post->find('all');
 		$this->set(compact('posts'));
 	}
 

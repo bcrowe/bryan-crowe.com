@@ -36,12 +36,7 @@ class AppController extends Controller {
 
 	use CrudControllerTrait;
 
-	public $helpers = [
-		'Session',
-		'Html'      => ['className' => 'BoostCake.BoostCakeHtml'],
-		'Form'      => ['className' => 'BoostCake.BoostCakeForm'],
-		'Paginator' => ['className' => 'BoostCake.BoostCakePaginator']
-	];
+	public $helpers = ['Session'];
 
 /**
  * List of global controller components
@@ -69,14 +64,6 @@ class AppController extends Controller {
 			'authorize'      => ['Controller'],
 			'authError'      => 'You need to be logged in to view this page.',
 			'authenticate'   => ['Blowfish'],
-			'flash' => [
-				'element' => 'alert',
-				'key' => 'auth',
-				'params' => [
-					'plugin' => 'BoostCake',
-					'class' => 'alert-danger'
-				]
-			]
 		]
 	];
 
