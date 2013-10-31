@@ -6,6 +6,7 @@
 /Plugin
 /vendor
 /.vagrant
+composer.lock
 
 # OS generated files #
 ######################
