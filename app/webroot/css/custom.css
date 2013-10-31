@@ -26,3 +26,14 @@ img.thirty-two {
 #external-links {
 	text-align: center;
 }
+
+#posts h2 {
+	font-size: 20px;
+	color: #00CCFF;
+	margin-bottom: 0;
+}
+
+#posts p.datetime {
+	font-size: 16px;
+	color: #E5E5E5;
+}
