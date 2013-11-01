@@ -8,6 +8,10 @@ App::uses('AppController', 'Controller');
  */
 class PostsController extends AppController {
 
+	public function isAuthorized($user) {
+		return parent::isAuthorized($user);
+	}
+
 	public function beforeFilter() {
 		$this->Auth->allow(['index', 'add', 'posts']);
 	}
