@@ -13,7 +13,7 @@ class UsersController extends AppController {
 	}
 
 	public function beforeFilter() {
-		$this->Auth->allow(['index', 'add', 'login']);
+		$this->Auth->allow(['login', 'logout']);
 	}
 
 	public function login() {
