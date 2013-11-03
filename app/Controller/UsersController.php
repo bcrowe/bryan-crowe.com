@@ -9,6 +9,9 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 
 	public function isAuthorized($user) {
+		if($user['role'] === 'admin') {
+			return true;
+		}
 		return parent::isAuthorized($user);
 	}
 
