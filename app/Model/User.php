@@ -13,8 +13,8 @@ class User extends AppModel {
  *
  * @var array
  */
-	public $hasMany = array(
-		'Post' => array(
+	public $hasMany = [
+		'Post' => [
 			'className' => 'Post',
 			'foreignKey' => 'user_id',
 			'dependent' => false,
@@ -26,10 +26,10 @@ class User extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
-		)
-	);
+		]
+	];
 
-	public function beforeSave($options = array()) {
+	public function beforeSave($options = []) {
 		if (isset($this->data['User']['password'])) {
 			$hash = Security::hash($this->data['User']['password'], 'blowfish');
 			$this->data['User']['password'] = $hash;
