@@ -3,9 +3,9 @@
 	<?php echo $this->Html->link(__('New Post'), array('action' => 'add')); ?>
 	<table class="table" cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('title'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+		<th><?php echo $this->Paginator->sort('title'); ?></th>
+		<th><?php echo $this->Paginator->sort('created'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($posts as $post): ?>
 	<tr>
@@ -23,7 +23,8 @@
 	echo $this->Paginator->counter(array(
 	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
 	));
-	?>	</p>
+	?>
+	</p>
 	<div class="paging">
 	<?php
 		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
