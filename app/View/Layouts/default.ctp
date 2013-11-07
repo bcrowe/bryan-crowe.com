@@ -17,7 +17,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('cake_dev', 'Bryan Crowe');
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,7 +25,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php echo $this->Html->charset(); ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php echo $cakeDescription ?> | 
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
