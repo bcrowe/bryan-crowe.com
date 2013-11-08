@@ -36,7 +36,7 @@ class AppController extends Controller {
 
 	use CrudControllerTrait;
 
-	public $helpers = ['Session'];
+	public $helpers = ['Session', 'TinyMCE.TinyMCE'];
 
 /**
  * List of global controller components

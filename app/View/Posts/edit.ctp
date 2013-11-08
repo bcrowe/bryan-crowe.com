@@ -1,3 +1,4 @@
+<?php $this->TinyMCE->editor(array('theme' => 'advanced', 'mode' => 'textareas')); ?>
 <div class="posts form">
 <?php echo $this->Form->create('Post'); ?>
 	<fieldset>
