@@ -1,26 +1,27 @@
 body {
-	background-color: #141414;
+	background-color: #202021;
 }
 
 #name {
 	font-size: 26px;
-	color: #9B703F;
+	color: #f9ee98;
 	text-align: center;
 	margin: 5px 0 10px 0;
 }
 
 #name span.last-name {
-	color: #CF6A4C;
+	color: #9b7040;
 }
 
 #photo {
-	padding-top: 10px;
+	margin-top: 20px;
 	text-align: center;
 }
 
 #photo img {
 	width: 150px;
 	height: 150px;
+	border: 3px solid #f8f8f8;
 }
 
 img.thirty-two {
@@ -33,25 +34,32 @@ img.thirty-two {
 }
 
 #posts h2 {
-	font-size: 20px;
-	color: #DAEFA3;
+	font-size: 34px;
+	color: #f9ee98;
 	margin-bottom: 0;
 }
 
 #posts p.datetime {
 	font-size: 16px;
-	color: #9B859D;
+	color: #f9ee98;
 }
 
 p {
-	color:  #8F9D6A;
+	font-size: 24px;
+	line-height: 34px;
+	letter-spacing: 1px;
+	color:  #f8f8f8;
 }
 
 p a {
-	color: #F8F8F8;
+	color: #7587a6;
 }
 
 p a:hover {
-	color: #F8F8F8;
+	color: #7587a6;
 	text-decoration: underline;
+}
+
+hr {
+	border-top: 2px dotted #5e5a60;
 }
