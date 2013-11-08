@@ -1,16 +1,16 @@
 body {
-	background-color: #000;
+	background-color: #141414;
 }
 
 #name {
 	font-size: 26px;
-	color: #E5E5E5;
+	color: #9B703F;
 	text-align: center;
 	margin: 5px 0 10px 0;
 }
 
-#name span.light-blue {
-	color: #00CCFF;
+#name span.last-name {
+	color: #CF6A4C;
 }
 
 #photo {
@@ -34,15 +34,24 @@ img.thirty-two {
 
 #posts h2 {
 	font-size: 20px;
-	color: #00CCFF;
+	color: #DAEFA3;
 	margin-bottom: 0;
 }
 
 #posts p.datetime {
 	font-size: 16px;
-	color: #E5E5E5;
+	color: #9B859D;
 }
 
 p {
-	color:  #C8C5C8;
+	color:  #8F9D6A;
+}
+
+p a {
+	color: #F8F8F8;
+}
+
+p a:hover {
+	color: #F8F8F8;
+	text-decoration: underline;
 }

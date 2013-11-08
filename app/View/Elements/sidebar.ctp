@@ -1,8 +1,8 @@
 <div class="affix">
 	<div id="photo">
-		<img class="img-circle img-thumbnail img-responsive" src="/img/bryan-crowe.jpeg" />
+		<img class="img-circle img-responsive" src="/img/bryan-crowe.jpeg" />
 	</div>
-	<h1 id="name">bryan<span class="light-blue">crowe</span></h1>
+	<h1 id="name">bryan<span class="last-name">crowe</span></h1>
 	<div id="external-links">
 		<a href="//github.com/bcrowe" target="_blank"><img src="/img/github-inverted.png" /></a>
 		<a href="mailto:bryan@bryan-crowe.com"><img class="thirty-two" src="/img/email-inverted.png" /></a>
