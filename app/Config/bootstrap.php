@@ -80,6 +80,7 @@ Cache::config('default', ['engine' => 'File']);
  *
  */
 CakePlugin::load('Crud');
+CakePlugin::load('TinyMCE');
 
 if (php_sapi_name() !== 'cli' && Configure::read('debug') && in_array('DebugKit', App::objects('plugin'))) {
 	CakePlugin::load('DebugKit');

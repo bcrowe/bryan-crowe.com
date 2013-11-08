@@ -1,0 +1,3 @@
+[submodule "Plugin/TinyMCE"]
+	path = Plugin/TinyMCE
+	url = https://github.com/CakeDC/TinyMCE.git
