@@ -9,14 +9,14 @@ App::uses('AppController', 'Controller');
 class PostsController extends AppController {
 
 	public function isAuthorized($user) {
-		if($user['role'] === 'admin') {
+		if(in_array($this->action, ['index', 'add', 'edit', 'delete']) && $user['role'] === 'admin') {
 			return true;
 		}
 		return parent::isAuthorized($user);
 	}
 
 	public function beforeFilter() {
-		$this->Auth->allow(['index', 'add', 'posts']);
+		$this->Auth->allow(['posts']);
 	}
 
 	public function posts() {
