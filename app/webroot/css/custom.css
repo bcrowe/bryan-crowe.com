@@ -33,8 +33,12 @@ img.thirty-two {
 	text-align: center;
 }
 
+#posts {
+	padding-top: 20px;
+}
+
 #posts h2 {
-	font-size: 50px;
+	font-size: 34px;
 	color: #f9ee98;
 	margin-bottom: 0;
 	line-height: 1;
@@ -69,24 +73,34 @@ hr {
 .time-circle {
 	width: 50px;
 	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .time-day {
-	width: 50px;
-	height: 25px;
-	background-color: #e5e5e5;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
+	width: 100px;
+	height: 50px;
+	background-color: #7587a6;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
 	text-align: center;
-	line-height: 25px;
+	line-height: 50px;
+	color: #f8f8f8;
+	border-left: 3px solid #5e5a60;
+	border-right: 3px solid #5e5a60;
+	border-top: 3px solid #5e5a60;
 }
 
 .time-month {
-	width: 50px;
-	height: 25px;
-	background-color: #ffffff;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+	width: 100px;
+	height: 50px;
+	background-color: #f8f8f8;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 	text-align: center;
-	line-height: 25px;
+	line-height: 50px;
+	color: #202021;
+	border-left: 3px solid #5e5a60;
+	border-right: 3px solid #5e5a60;
+	border-bottom: 3px solid #5e5a60;
 }

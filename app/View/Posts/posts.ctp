@@ -14,15 +14,19 @@
 				</div>
 			</div>
 			<div class="col-md-9">
-				<h2><?php echo h($post['Post']['title']); ?></h2>
+				<div class="row">
+					<h2><?php echo h($post['Post']['title']); ?></h2>
+				</div>
+				<div class="row">
+					<p><?php echo $post['Post']['summary']; ?></p>
+				</div>
+				<?php if ($current < $postCount): ?>
+					<div class="row">
+						<hr>
+					</div>
+				<?php endif; ?>
 			</div>
 		</div>
-		<div class="row">
-			<p><?php echo $post['Post']['summary']; ?></p>
-		</div>
-		<?php if ($current < $postCount): ?>
-			<hr>
-		<?php endif; ?>
 		<?php $current++; ?>
 	<?php endforeach; ?>
 </div>
