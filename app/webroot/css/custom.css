@@ -34,9 +34,11 @@ img.thirty-two {
 }
 
 #posts h2 {
-	font-size: 34px;
+	font-size: 50px;
 	color: #f9ee98;
 	margin-bottom: 0;
+	line-height: 1;
+	margin: 0;
 }
 
 #posts p.datetime {
@@ -62,4 +64,29 @@ p a:hover {
 
 hr {
 	border-top: 2px dotted #5e5a60;
+}
+
+.time-circle {
+	width: 50px;
+	height: 50px;
+}
+
+.time-day {
+	width: 50px;
+	height: 25px;
+	background-color: #e5e5e5;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.time-month {
+	width: 50px;
+	height: 25px;
+	background-color: #ffffff;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	text-align: center;
+	line-height: 25px;
 }
