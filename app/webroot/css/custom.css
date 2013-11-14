@@ -3,14 +3,15 @@ body {
 }
 
 #name {
-	font-size: 26px;
-	color: #f9ee98;
+	font-size: 24px;
+	color: #f8f8f8;
 	text-align: center;
 	margin: 5px 0 10px 0;
+	letter-spacing: 2px;
 }
 
 #name span.last-name {
-	color: #9b7040;
+	color: #7587a6;
 }
 
 #photo {
@@ -38,11 +39,11 @@ img.thirty-two {
 }
 
 #posts h2 {
-	font-size: 34px;
+	font-size: 25px;
 	color: #f9ee98;
 	margin-bottom: 0;
-	line-height: 1;
-	margin: 25px 0 10px 0;
+	line-height: 50px;
+	margin: 0 0 10px 0;
 }
 
 #posts p.datetime {

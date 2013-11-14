@@ -3,7 +3,7 @@
 	<?php $current = 1; ?>
 	<?php foreach ($posts as $post): ?>
 		<div class="row post-row">
-			<div class="col-md-3 time-col">
+			<div class="col-md-2 time-col">
 				<div class="time-circle">
 					<div class="time-day">
 						<?php echo $this->Time->format('M', $post['Post']['created']); ?>
@@ -13,11 +13,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-10">
 				<div class="row">
 					<h2><?php echo h($post['Post']['title']); ?></h2>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<p>
 						<?php
 						echo $this->Text->truncate($post['Post']['summary'], 100, array(
@@ -27,7 +27,7 @@
 						));
 						?>
 					</p>
-				</div>
+				</div> -->
 				<?php if ($current < $postCount): ?>
 					<!-- <div class="row">
 						<hr>
