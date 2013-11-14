@@ -34,7 +34,7 @@ img.thirty-two {
 }
 
 #posts {
-	padding-top: 20px;
+	padding-top: 75px;
 }
 
 #posts h2 {
@@ -42,12 +42,16 @@ img.thirty-two {
 	color: #f9ee98;
 	margin-bottom: 0;
 	line-height: 1;
-	margin: 0;
+	margin: 25px 0 10px 0;
 }
 
 #posts p.datetime {
 	font-size: 16px;
 	color: #f9ee98;
+}
+
+div.post-row {
+	margin-bottom: 25px;
 }
 
 p {
@@ -71,34 +75,34 @@ hr {
 }
 
 .time-circle {
-	width: 100px;
-	height: 100px;
-	font-size: 24px;
+	width: 50px;
+	height: 50px;
+	font-size: 16px;
 	font-weight: bold;
 }
 
 .time-day {
-	width: 100px;
-	height: 50px;
-	background-color: #7587a6;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
+	width: 50px;
+	height: 25px;
+	background-color: #f8f8f8;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 	text-align: center;
-	line-height: 50px;
-	color: #f8f8f8;
+	line-height: 30px;
+	color: #202021;
 	border-left: 3px solid #5e5a60;
 	border-right: 3px solid #5e5a60;
 	border-top: 3px solid #5e5a60;
 }
 
 .time-month {
-	width: 100px;
-	height: 50px;
+	width: 50px;
+	height: 25px;
 	background-color: #f8f8f8;
-	border-bottom-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 20px;
 	color: #202021;
 	border-left: 3px solid #5e5a60;
 	border-right: 3px solid #5e5a60;
