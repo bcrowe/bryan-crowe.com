@@ -1,5 +1,6 @@
 body {
-	background-color: #202021;
+	/*background-color: #202021;*/
+	background-color: #000;
 }
 
 #name {
@@ -11,7 +12,8 @@ body {
 }
 
 #name span.last-name {
-	color: #7587a6;
+	/*color: #7587a6;*/
+	color: #05aae5;
 }
 
 #photo {
@@ -38,21 +40,27 @@ img.thirty-two {
 	padding-top: 75px;
 }
 
+
 #posts h2 {
-	font-size: 25px;
-	color: #f9ee98;
 	margin-bottom: 0;
 	line-height: 25px;
 	letter-spacing: 1.5px;
 	margin: 12.5px 0 10px 0;
+}
+
+#posts h2 a {
+	font-size: 25px;
+	/*color: #f9ee98;*/
+	color: #05aae5;
 	transition: all 0.1s ease;
 }
 
-#posts h2:hover {
+#posts h2 a:hover {
 	border-left: 5px solid #5e5a60;
 	color: #f8f8f8;
 	padding-left: 10px;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 #posts p.datetime {
@@ -64,11 +72,27 @@ div.post-row {
 	margin-bottom: 25px;
 }
 
+#post {
+	padding-top: 20px;
+}
+
+#post h2 {
+	font-size: 35px;
+	/*color: #f9ee98;*/
+	color: #05aae5;
+	margin-bottom: 0;
+	line-height: 25px;
+	letter-spacing: 1.5px;
+	margin: 12.5px 0 10px 0;
+	transition: all 0.1s ease;
+}
+
 p {
 	font-size: 24px;
 	line-height: 34px;
 	letter-spacing: 1px;
 	color:  #f8f8f8;
+	text-align: justify;
 }
 
 p a {
@@ -78,6 +102,10 @@ p a {
 p a:hover {
 	color: #7587a6;
 	text-decoration: underline;
+}
+
+p.date {
+	color: #5e5a60;
 }
 
 hr {

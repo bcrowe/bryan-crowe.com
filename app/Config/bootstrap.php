@@ -83,20 +83,20 @@ CakePlugin::load('Crud');
 CakePlugin::load('Geshi');
 
 if (php_sapi_name() !== 'cli' && Configure::read('debug') && in_array('DebugKit', App::objects('plugin'))) {
-	CakePlugin::load('DebugKit');
-	App::uses('CakeEventManager', 'Event');
-	CakeEventManager::instance()->attach(function($event) {
-		$controller = $event->subject();
-		$controller->Toolbar = $controller->Components->load(
-			'DebugKit.Toolbar',
-			[
-				'panels' => [
-					'Crud.Crud'
-				]
-			]
-		);
-		$controller->Crud->addListener('DebugKit', 'Crud.DebugKit');
-	}, 'Controller.initialize');
+	// CakePlugin::load('DebugKit');
+	// App::uses('CakeEventManager', 'Event');
+	// CakeEventManager::instance()->attach(function($event) {
+	// 	$controller = $event->subject();
+	// 	$controller->Toolbar = $controller->Components->load(
+	// 		'DebugKit.Toolbar',
+	// 		[
+	// 			'panels' => [
+	// 				'Crud.Crud'
+	// 			]
+	// 		]
+	// 	);
+	// 	$controller->Crud->addListener('DebugKit', 'Crud.DebugKit');
+	// }, 'Controller.initialize');
 }
 
 /**

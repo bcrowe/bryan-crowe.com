@@ -35,6 +35,7 @@ $cakeDescription = __d('cake_dev', 'Bryan Crowe');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
+		echo $this->Html->script('js');
 		echo $this->fetch('script');
 	?>
 </head>
@@ -45,7 +46,7 @@ $cakeDescription = __d('cake_dev', 'Bryan Crowe');
 			<div class="col-md-3">
 				<?php echo $this->element('sidebar'); ?>
 			</div>
-			<div class="col-md-9">
+			<div id="content" class="col-md-9">
 				<?php echo $this->Session->flash(); ?>
 				<?php echo $this->fetch('content'); ?>
 			</div>

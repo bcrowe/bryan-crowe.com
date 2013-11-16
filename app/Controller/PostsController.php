@@ -16,7 +16,7 @@ class PostsController extends AppController {
 	}
 
 	public function beforeFilter() {
-		$this->Auth->allow(['posts']);
+		$this->Auth->allow(['posts', 'view']);
 	}
 
 	public function posts() {
