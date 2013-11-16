@@ -6,6 +6,8 @@
 /Plugin
 /vendor
 /.vagrant
+Vagrantfile
+bootstrap.sh
 composer.lock
 
 # OS generated files #
