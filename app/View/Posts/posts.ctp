@@ -17,22 +17,6 @@
 				<div class="row">
 					<h2><?php echo h($post['Post']['title']); ?></h2>
 				</div>
-				<!-- <div class="row">
-					<p>
-						<?php
-						echo $this->Text->truncate($post['Post']['summary'], 100, array(
-							'ellipsis' => ' ...',
-							'exact'    => false,
-							'html'     => false
-						));
-						?>
-					</p>
-				</div> -->
-				<?php if ($current < $postCount): ?>
-					<!-- <div class="row">
-						<hr>
-					</div> -->
-				<?php endif; ?>
 			</div>
 		</div>
 		<?php $current++; ?>
