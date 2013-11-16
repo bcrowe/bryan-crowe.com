@@ -36,7 +36,7 @@ class AppController extends Controller {
 
 	use CrudControllerTrait;
 
-	public $helpers = ['Session', 'TinyMCE.TinyMCE'];
+	public $helpers = ['Session', 'Geshi.Geshi'];
 
 /**
  * List of global controller components
