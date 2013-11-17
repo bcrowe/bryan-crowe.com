@@ -30,9 +30,8 @@ $cakeDescription = __d('cake_dev', 'Bryan Crowe');
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-		echo $this->Html->css('bootstrap.min');
+		echo $this->Html->css('bootstrap/bootstrap.min');
 		echo $this->Html->css('custom');
-		echo $this->Html->css('geshi/twilight');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
