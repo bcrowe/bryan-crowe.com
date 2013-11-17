@@ -17,28 +17,29 @@
 /*
 * Global geshi styles
 **********************/
-#main pre {
+.code {
 	line-height: 1.5em;
 	font-size: 10px;
 	white-space: normal;
 	padding: 0;
 	background: #222223;
 	border: 1px solid #222;
+	padding: 15px;
 }
-pre ol {
+.code ol {
 	list-style: decimal;
 	list-style-position: outside;
 	padding: 0;
 	margin: 0;
 }
-#main pre ol li {
+.code ol li {
 	margin: 0 0 0 35px;
 	padding: 0;
 	color: #000;
 	clear: none;
 }
-pre ol li div {
-	color:#f8f8f8;
+.code ol li div {
+	color: #f8f8f8;
 }
 
 /* Line highlights */

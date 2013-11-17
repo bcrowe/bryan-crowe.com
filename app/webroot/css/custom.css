@@ -21,10 +21,14 @@ body {
 	text-align: center;
 }
 
-#photo img {
+#bryan {
 	width: 155px;
 	height: 155px;
 	border: 3px solid #f8f8f8;
+}
+
+#bryan:hover {
+	cursor: pointer;
 }
 
 img.thirty-two {
@@ -42,20 +46,17 @@ img.thirty-two {
 
 
 #posts h2 {
+	font-size: 25px;
+	/*color: #f9ee98;*/
+	color: #05aae5;
+	transition: all 0.1s ease;
 	margin-bottom: 0;
 	line-height: 25px;
 	letter-spacing: 1.5px;
 	margin: 12.5px 0 10px 0;
 }
 
-#posts h2 a {
-	font-size: 25px;
-	/*color: #f9ee98;*/
-	color: #05aae5;
-	transition: all 0.1s ease;
-}
-
-#posts h2 a:hover {
+#posts h2:hover {
 	border-left: 5px solid #5e5a60;
 	color: #f8f8f8;
 	padding-left: 10px;
@@ -85,6 +86,11 @@ div.post-row {
 	letter-spacing: 1.5px;
 	margin: 12.5px 0 10px 0;
 	transition: all 0.1s ease;
+}
+
+#posts-index {
+	margin-top: 20px;
+	color: #f8f8f8;
 }
 
 p {
