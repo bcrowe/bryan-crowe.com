@@ -36,7 +36,7 @@ class AppController extends Controller {
 
 	use CrudControllerTrait;
 
-	public $helpers = ['Session', 'Geshi.Geshi'];
+	public $helpers = ['Session'];
 
 /**
  * List of global controller components
