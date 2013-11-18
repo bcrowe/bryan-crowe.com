@@ -41,8 +41,8 @@ class Comment extends AppModel {
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
+			],
+		],
 		'post_id' => [
 			'uuid' => [
 				'rule' => ['uuid'],
