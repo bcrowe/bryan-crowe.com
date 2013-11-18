@@ -20,7 +20,9 @@ class PostsController extends AppController {
 	}
 
 	public function posts() {
-		$posts = $this->Post->find('all');
+		$posts = $this->Post->find('all', [
+			'order' => 'Post.created DESC'
+		]);
 		$this->set(compact('posts'));
 	}
 

@@ -93,6 +93,14 @@ div.post-row {
 	color: #f8f8f8;
 }
 
+.posts.form {
+	margin-top: 20px;
+}
+
+pre {
+	border: 1px solid #5e5a60;
+}
+
 p {
 	font-size: 24px;
 	line-height: 34px;
