@@ -12,10 +12,30 @@ class Comment extends AppModel {
  *
  * @var array
  */
-	public $validate = array(
-		'name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+	public $validate = [
+		'name' => [
+			'notEmpty' => [
+				'rule' => ['notEmpty'],
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			],
+		],
+		'email' => [
+			'email' => [
+				'rule' => ['email'],
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			],
+		],
+		'comment' => [
+			'notEmpty' => [
+				'rule' => ['notEmpty'],
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -23,37 +43,17 @@ class Comment extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'email' => array(
-			'email' => array(
-				'rule' => array('email'),
+		'post_id' => [
+			'uuid' => [
+				'rule' => ['uuid'],
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'comment' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'post_id' => array(
-			'uuid' => array(
-				'rule' => array('uuid'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-	);
+			],
+		],
+	];
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
@@ -62,13 +62,13 @@ class Comment extends AppModel {
  *
  * @var array
  */
-	public $belongsTo = array(
-		'Post' => array(
+	public $belongsTo = [
+		'Post' => [
 			'className' => 'Post',
 			'foreignKey' => 'post_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
-	);
+		]
+	];
 }
