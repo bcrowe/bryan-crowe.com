@@ -13,6 +13,7 @@ $(function() {
 		$.get('/posts/view/' + $(this).attr('data-id'), function(data) {
 			$("#content").html(data);
 			$('#post').fadeIn(200);
+			Rainbow.color();
 		});
 	});
 
