@@ -8,4 +8,19 @@ App::uses('AppController', 'Controller');
  */
 class CommentsController extends AppController {
 
+	public function isAuthorized($user) {
+		return parent::isAuthorized($user);
+	}
+
+	public function beforeFilter() {
+		$this->Auth->allow(['add']);
+	}
+
+	public function login() {
+		if ($this->request->is('post')) {
+			$this->Comment->save($this->request->data);
+			return $this->redirect($this-referer());
+		}
+	}
+
 }
