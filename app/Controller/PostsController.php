@@ -26,4 +26,13 @@ class PostsController extends AppController {
 		$this->set(compact('posts'));
 	}
 
+	public function view($id = null) {
+		$post = $this->Post->find('first', [
+			'conditions' => ['Post.id' => $id]
+			],
+			'contain' => ['Comment']
+		]);
+		$this->set(compact('post'));
+	}
+
 }
