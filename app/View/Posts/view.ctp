@@ -4,6 +4,19 @@
 	<?php echo $post['Post']['body']; ?>
 </div>
 <div id="comments">
+	<?php if (!empty($post['Comment'])): ?>
+		<?php foreach ($post['Comment'] as $comment): ?>
+			<div class="row">
+				<div class="col-md-3">
+					<?php echo $comment['name']; ?>
+				</div>	
+				<div class="col-md-9">	
+					<?php echo $comment['body']; ?>
+				</div>
+			</div>
+		<?php endforeach; ?>
+	<?php endif; ?>
+	<div class="row">
 	<?php
 	echo $this->Form->create('Comment', [
 		'url'  => '/comments/add',
@@ -50,4 +63,5 @@
 		<?php echo $this->Form->hidden('post_id', ['value' => $post['Post']['id']]); ?>
 		<?php echo $this->Form->button('Add Comment', ['class' => 'btn btn-primary']); ?>
 	<?php echo $this->Form->end(); ?>
+	</div>
 </div>

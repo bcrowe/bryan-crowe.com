@@ -16,7 +16,7 @@ class CommentsController extends AppController {
 		$this->Auth->allow(['add']);
 	}
 
-	public function login() {
+	public function add() {
 		if ($this->request->is('post')) {
 			$this->Comment->save($this->request->data);
 			return $this->redirect($this-referer());
