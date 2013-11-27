@@ -1,5 +1,4 @@
 body {
-	/*background-color: #202021;*/
 	background-color: #000;
 }
 
@@ -12,7 +11,6 @@ body {
 }
 
 #name span.last-name {
-	/*color: #7587a6;*/
 	color: #05aae5;
 }
 
@@ -79,7 +77,6 @@ div.post-row {
 
 #post h2 {
 	font-size: 35px;
-	/*color: #f9ee98;*/
 	color: #05aae5;
 	margin-bottom: 0;
 	line-height: 25px;
