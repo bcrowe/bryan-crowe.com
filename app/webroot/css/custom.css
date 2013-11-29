@@ -179,3 +179,7 @@ hr {
 #comments h3 {
 	color: #f8f8f8;
 }
+
+#comment-form input, #comment-form textarea {
+	margin-bottom: 5px;
+}
