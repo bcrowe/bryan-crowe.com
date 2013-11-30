@@ -11,7 +11,7 @@
 				<td><?php echo $this->Time->format('M j, Y', h($post['Post']['created'])); ?>&nbsp;</td>
 				<td class="actions">
 					<?php echo $this->Html->link(__('Edit'), ['action' => 'edit', $post['Post']['id']]); ?>
-					<?php echo $this->Form->postLink(__('Delete'), ['action' => 'delete', $post['Post']['id']), null, __('Are you sure you want to delete # %s?', $post['Post']['id']]); ?>
+					<?php echo $this->Form->postLink(__('Delete'), ['action' => 'delete', $post['Post']['id']], null, __('Are you sure you want to delete # %s?', $post['Post']['id'])); ?>
 				</td>
 			</tr>
 		<?php endforeach; ?>
