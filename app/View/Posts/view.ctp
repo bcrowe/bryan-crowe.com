@@ -3,7 +3,7 @@
 	<p class="date"><?php echo $this->Time->format('F j, Y', $post['Post']['created']); ?></p>
 	<?php echo $post['Post']['body']; ?>
 </div>
-<div id="comments">
+<div id="comments" style="display: none;">
 	<h3>Comments</h3>
 	<?php if (!empty($post['Comment'])): ?>
 		<?php foreach ($post['Comment'] as $comment): ?>

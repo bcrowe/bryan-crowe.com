@@ -1,7 +1,7 @@
 $(function() {
 
 	$(document).on('click', '#bryan', function() {
-		$('#post').fadeOut(200, 'swing');
+		$('#post, #comments').fadeOut(200, 'swing');
 		$.get('/posts/posts', function(data) {
 			$("#content").html(data);
 			$('#posts').hide().fadeIn(200, 'swing');
@@ -12,7 +12,7 @@ $(function() {
 		$('#posts').fadeOut(200);
 		$.get('/posts/view/' + $(this).attr('data-id'), function(data) {
 			$("#content").html(data);
-			$('#post').fadeIn(200, 'swing');
+			$('#post, #comments').fadeIn(200, 'swing');
 			Rainbow.color();
 		});
 	});
