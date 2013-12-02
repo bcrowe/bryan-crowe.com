@@ -15,10 +15,6 @@ class CommentsController extends AppController {
 		return parent::isAuthorized($user);
 	}
 
-	public function isAuthorized($user) {
-		return parent::isAuthorized($user);
-	}
-
 	public function beforeFilter() {
 		$this->Auth->allow(['add']);
 	}

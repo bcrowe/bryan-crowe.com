@@ -73,7 +73,7 @@ div.post-row {
 	padding-top: 20px;
 }
 
-#post h2 {
+#post h2, #comments h3 {
 	font-size: 35px;
 	color: #05aae5;
 	margin-bottom: 0;
@@ -172,10 +172,6 @@ hr {
 
 #comments {
 	margin: 50px 0 20px 0;
-}
-
-#comments h3 {
-	color: #f8f8f8;
 }
 
 #comment-form input, #comment-form textarea {
