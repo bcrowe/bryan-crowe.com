@@ -97,7 +97,7 @@ pre {
 }
 
 p {
-	font-size: 24px;
+	font-size: 23px;
 	line-height: 34px;
 	letter-spacing: 1px;
 	color:  #f8f8f8;
@@ -172,6 +172,7 @@ hr {
 
 #comments {
 	margin: 50px 0 20px 0;
+	color: #f8f8f8;
 }
 
 #comment-form input, #comment-form textarea {
