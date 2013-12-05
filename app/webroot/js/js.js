@@ -26,7 +26,7 @@ $(function() {
 			var end = $(this).get(0).selectionEnd;
 
 			$(this).val($(this).val().substring(0, start)
-			+ "\t"
+			+ '\t'
 			+ $(this).val().substring(end));
 
 			$(this).get(0).selectionStart =
