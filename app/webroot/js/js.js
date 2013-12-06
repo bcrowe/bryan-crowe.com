@@ -12,7 +12,7 @@ $(function() {
 		$('#posts').fadeOut(200);
 		$.get('/posts/view/' + $(this).attr('data-id'), function(data) {
 			$("#content").html(data);
-			$('#post, #comments').fadeIn(200, 'swing');
+			$('#post').fadeIn(200, 'swing');
 			Rainbow.color();
 		});
 	});
