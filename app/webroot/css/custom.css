@@ -167,7 +167,7 @@ hr {
 	height: auto;
 	z-index: -1000;
 	overflow: hidden;
-	opacity: .10;
+	opacity: .5;
 }
 
 #comments {
