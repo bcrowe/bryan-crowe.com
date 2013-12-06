@@ -170,6 +170,15 @@ hr {
 	opacity: .5;
 }
 
+video.blurred {
+	transition: all 0.5s ease;
+	filter: blur(15px);
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+}
+
 #comments {
 	margin: 50px 0 20px 0;
 	color: #f8f8f8;

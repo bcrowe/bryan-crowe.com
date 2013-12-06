@@ -2,6 +2,7 @@ $(function() {
 
 	$(document).on('click', '#bryan', function() {
 		$('#post, #comments').fadeOut(200, 'swing');
+		$('video').removeClass('blurred');
 		$.get('/posts/posts', function(data) {
 			$("#content").html(data);
 			$('#posts').hide().fadeIn(200, 'swing');
@@ -10,6 +11,7 @@ $(function() {
 
 	$(document).on('click', '.post-title', function() {
 		$('#posts').fadeOut(200);
+		$('video').addClass('blurred');
 		$.get('/posts/view/' + $(this).attr('data-id'), function(data) {
 			$("#content").html(data);
 			$('#post').fadeIn(200, 'swing');
