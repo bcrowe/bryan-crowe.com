@@ -1,6 +1,6 @@
 <div class="affix">
 	<div id="photo">
-		<img id="bryan" class="img-circle img-responsive" src="/img/bryan-crowe.jpeg" />
+		<img id="bryan" class="img-circle img-responsive" src="/img/bryan-crowe.jpg" />
 	</div>
 	<h1 id="name">Bryan<span class="last-name"> Crowe</span></h1>
 	<div id="external-links">
