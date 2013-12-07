@@ -115,6 +115,7 @@ p a:hover {
 
 p.date {
 	font-style: italic;
+	margin-bottom: 20px;
 }
 
 hr {
