@@ -30,7 +30,8 @@ $cakeDescription = __d('cake_dev', 'Bryan Crowe');
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-		echo $this->Html->css('bootstrap/bootstrap.min');
+		echo $this->Html->css('bootstrap.min');
+		echo $this->Html->css('font-awesome.min');
 		echo $this->Html->css('custom');
 		echo $this->Html->css('/js/rainbow/themes/twilight');
 		echo $this->fetch('meta');
