@@ -37,6 +37,18 @@ img.thirty-two {
 	text-align: center;
 }
 
+#external-links a {
+	color: #f8f8f8;
+}
+
+#external-links a .fa-inverse {
+	color: #000;
+}
+
+#external-links a:hover {
+	text-decoration: none;
+}
+
 #posts {
 	padding-top: 75px;
 }
