@@ -204,6 +204,7 @@ img.dim {
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 }
+
 #login-form input[type="password"] {
 	margin-bottom: 10px;
 	border-top-left-radius: 0;
@@ -213,5 +214,3 @@ img.dim {
 .form, legend {
 	color: #f8f8f8;
 }
-
-
