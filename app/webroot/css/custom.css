@@ -114,7 +114,7 @@ p a:hover {
 }
 
 p.date {
-	color: #5e5a60;
+	font-style: italic;
 }
 
 hr {
@@ -191,3 +191,21 @@ video.blurred {
 img.dim {
 	opacity: 0.9;
 }
+
+#login-form {
+	max-width: 330px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+#login-form input[type="text"] {
+	margin-bottom: -1px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+#login-form input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+

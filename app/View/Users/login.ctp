@@ -1,5 +1,6 @@
+
 <?php
-	echo $this->Form->create('User');
+	echo $this->Form->create('User', array('id' => 'login-form'));
 	echo $this->Form->input('username', [
 		'class'       => 'form-control',
 		'placeholder' => 'Username',
