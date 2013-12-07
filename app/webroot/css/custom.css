@@ -187,3 +187,7 @@ video.blurred {
 #comment-form input, #comment-form textarea {
 	margin-bottom: 5px;
 }
+
+img.dim {
+	opacity: 0.9;
+}
