@@ -210,3 +210,8 @@ img.dim {
 	border-top-right-radius: 0;
 }
 
+.form, legend {
+	color: #f8f8f8;
+}
+
+
