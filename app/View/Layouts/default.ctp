@@ -42,7 +42,10 @@ $cakeDescription = __d('cake_dev', 'Bryan Crowe');
 	?>
 </head>
 <body>
-	<video id="bkgVid" src="/video/drink-bw.mp4" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0"></video>
+	<video id="bkgVid" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+		<source src="/video/drink-bw.mp4">
+		<source src="/video/drink-bw.webm">
+	</video>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
