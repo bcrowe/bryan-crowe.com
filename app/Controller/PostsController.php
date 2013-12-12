@@ -9,7 +9,7 @@ App::uses('AppController', 'Controller');
 class PostsController extends AppController {
 
 	public function isAuthorized($user) {
-		if(in_array($this->action, ['index', 'add', 'edit', 'delete', 'test']) && $user['role'] === 'admin') {
+		if(in_array($this->action, ['index', 'add', 'edit', 'delete']) && $user['role'] === 'admin') {
 			return true;
 		}
 		return parent::isAuthorized($user);
