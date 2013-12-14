@@ -70,5 +70,4 @@ class AppController extends Controller {
 		$user = $this->Auth->user();
 		$this->set(compact('user'));
 	}
-
 }
