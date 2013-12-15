@@ -9,7 +9,7 @@ App::uses('AppController', 'Controller');
 class CommentsController extends AppController {
 
 	public function isAuthorized($user) {
-		if(in_array($this->action, ['index', 'edit', 'delete']) && $user['role'] === 'admin') {
+		if($user['role'] === 'admin') {
 			return true;
 		}
 		return parent::isAuthorized($user);
