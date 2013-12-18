@@ -11,7 +11,7 @@ class CommentsController extends AppController {
 	public function isAuthorized($user) {
 		if($user['role'] === 'admin') {
 			return true;
-		}
+		} 
 		return parent::isAuthorized($user);
 	}
 
