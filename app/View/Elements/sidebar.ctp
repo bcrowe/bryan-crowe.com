@@ -17,6 +17,6 @@
 		</a>
 	</div>
 	<div style="width: 155px; margin-top: 20px; text-align: center; color: #f8f8f8;">
-		Bryan Crowe is a zealous, beer-drinking, open source developer living in Pittsburgh, PA. He is interested in the CakePHP framework and probably has a mild form of adult autism and Tourette's syndrome.
+		Bryan Crowe is a zealous, beer-drinking, open source developer living in Pittsburgh, PA. He is involved in the CakePHP framework and probably has a mild form of adult autism and Tourette's syndrome.
 	</div>
 </div>
