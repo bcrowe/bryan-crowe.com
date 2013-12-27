@@ -1,6 +1,6 @@
 $(function() {
 
-	$(document).on('click', '#bryan', function() {
+	$(document).on('click', '#photo a', function() {
 		$('#post, #comments').fadeOut(200, 'swing');
 		$('video').removeClass('blurred');
 		$.get('/posts/posts', function(data) {
@@ -9,15 +9,27 @@ $(function() {
 		});
 	});
 
-	$(document).on('click', '.post-title', function() {
+	$(document).on('click', 'a.post-title', function(e) {
 		$('#posts').fadeOut(200);
 		$('video').addClass('blurred');
-		$.get('/posts/view/' + $(this).attr('data-id'), function(data) {
+		var href = $(this).attr('href');
+		loadContent(href);
+		history.pushState('', 'New URL: ' + href, href);
+		e.preventDefault();
+	});
+
+	window.onpopstate = function(event) {
+		loadContent(location.pathname);
+		$('video').removeClass('blurred');
+	};
+
+	function loadContent(url){
+		$.get(url, function(data) {
 			$("#content").html(data);
-			$('#post').fadeIn(200, 'swing');
+			$('#post').hide().fadeIn(200, 'swing');
 			Rainbow.color();
 		});
-	});
+	}
 
 	$(document).on('keydown', 'textarea', function(e) {
 		var keyCode = e.keyCode || e.which;
