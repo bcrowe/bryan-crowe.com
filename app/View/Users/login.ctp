@@ -1,4 +1,3 @@
-
 <?php
 	echo $this->Form->create('User', array('id' => 'login-form'));
 	echo $this->Form->input('username', [
