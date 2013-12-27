@@ -15,7 +15,7 @@
 			</div>
 			<div class="col-md-10">
 				<div class="row">
-					<a class="post-title" href="<?php echo $post['Post']['slug']; ?>"><?php echo h($post['Post']['title']); ?></a>
+					<a class="post-title" href="/<?php echo $post['Post']['slug']; ?>"><?php echo h($post['Post']['title']); ?></a>
 				</div>
 			</div>
 		</div>

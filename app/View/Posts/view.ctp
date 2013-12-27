@@ -3,74 +3,20 @@
 	<p class="date"><?php echo $this->Time->format('F j, Y', $post['Post']['created']); ?></p>
 	<?php echo $post['Post']['body']; ?>
 </div>
-<div id="comments" style="display: none;">
-	<h3>Comments</h3>
-	<?php if (!empty($post['Comment'])): ?>
-		<?php foreach ($post['Comment'] as $comment): ?>
-			<div class="row">
-				<div class="col-md-3">
-					<?php echo $comment['name']; ?>
-				</div>	
-				<div class="col-md-9">	
-					<?php echo $comment['body']; ?>
-				</div>
-			</div>
-		<?php endforeach; ?>
-	<?php endif; ?>
-	<div id="comment-form" class="row">
-		<?php
-		echo $this->Form->create('Comment', [
-			'url'  => '/comments/add',
-			'role' => 'form'
-		]);
-		?>
-		<div class="row">
-			<div class="col-xs-4">
-				<?php
-				echo $this->Form->input('name', [
-					'class'       => 'form-control',
-					'placeholder' => 'Your Name',
-					'label'       => false
-				]);
-				?>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-4">
-				<?php
-				echo $this->Form->input('email', [
-					'class'       => 'form-control',
-					'placeholder' => 'E-Mail Address',
-					'label'       => false
-				]);
-				?>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-4">
-				<?php
-				echo $this->Form->input('website', [
-					'class'       => 'form-control',
-					'placeholder' => 'Website',
-					'label'       => false
-				]);
-				?>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6">
-				<?php
-				echo $this->Form->input('body', [
-					'class'       => 'form-control',
-					'rows'        => 5,
-					'placeholder' => 'Your comments...',
-					'label'       => false
-				]);
-				?>
-			</div>
-		</div>
-		<?php echo $this->Form->hidden('post_id', ['value' => $post['Post']['id']]); ?>
-		<?php echo $this->Form->button('Add Comment', ['class' => 'btn btn-default']); ?>
-		<?php echo $this->Form->end(); ?>
-	</div>
+
+<div id="disqus-wrapper">
+	<div id="disqus_thread"></div>
 </div>
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'bryancrowe'; // required: replace example with your forum shortname
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

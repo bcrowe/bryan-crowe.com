@@ -1,7 +1,7 @@
 $(function() {
 
 	$(document).on('click', '#photo a', function() {
-		$('#post, #comments').fadeOut(200, 'swing');
+		$('#post, #disqus-wrapper').fadeOut(200, 'swing');
 		$('video').removeClass('blurred');
 		$.get('/posts/posts', function(data) {
 			$("#content").html(data);
@@ -26,7 +26,7 @@ $(function() {
 	function loadContent(url){
 		$.get(url, function(data) {
 			$("#content").html(data);
-			$('#post').hide().fadeIn(200, 'swing');
+			$('#post, #disqus-wrapper').hide().fadeIn(200, 'swing');
 			Rainbow.color();
 		});
 	}

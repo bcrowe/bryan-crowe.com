@@ -226,3 +226,7 @@ img.dim {
 .form, legend {
 	color: #f8f8f8;
 }
+
+#disqus-wrapper {
+	margin-top: 50px;
+}
