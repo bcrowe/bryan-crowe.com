@@ -1,6 +1,5 @@
 <div id="posts">
 	<?php $postCount = count($posts); ?>
-	<?php $current = 1; ?>
 	<?php foreach ($posts as $post): ?>
 		<div class="row post-row">
 			<div class="col-md-2 time-col">
@@ -19,6 +18,5 @@
 				</div>
 			</div>
 		</div>
-		<?php $current++; ?>
 	<?php endforeach; ?>
 </div>
