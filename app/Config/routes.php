@@ -28,7 +28,6 @@
 	Router::connect('/*', ['controller' => 'posts', 'action' => 'view']);
 	Router::connect('/pages/*', ['controller' => 'pages', 'action' => 'display']);
 	CakePlugin::routes();
-
 /**
  * Load the CakePHP default routes. Only remove this if you do not want to use
  * the built-in default routes.
