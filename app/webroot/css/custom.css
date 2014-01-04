@@ -72,6 +72,16 @@ img.thirty-two {
 	text-decoration: none;
 }
 
+#sidebar a.text-link {
+	color: #05aae5;
+	transition: all 0.1s ease;
+}
+
+#sidebar a.text-link:hover {
+	color: #f8f8f8;
+	text-decoration: none;
+}
+
 #posts p.datetime {
 	font-size: 16px;
 	color: #f9ee98;

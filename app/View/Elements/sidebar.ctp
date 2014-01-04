@@ -1,4 +1,4 @@
-<div class="affix">
+<div id="sidebar" class="affix">
 	<div id="photo">
 		<a href="/"><img class="img-circle img-responsive" src="/img/bryan-crowe.jpg" /></a>
 	</div>
@@ -17,6 +17,6 @@
 		</a>
 	</div>
 	<div style="width: 155px; margin-top: 20px; text-align: center; color: #f8f8f8;">
-		Bryan Crowe is a zealous, beer-drinking, open source developer living in Pittsburgh, PA. He is involved in the CakePHP framework.
+		Bryan Crowe is a zealous, beer-drinking, open source developer living in Pittsburgh, PA. He is involved in the <a class="text-link" href="http://www.cakephp.org" target="_blank">CakePHP</a> framework.
 	</div>
 </div>
