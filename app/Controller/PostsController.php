@@ -39,7 +39,8 @@ class PostsController extends AppController {
 		$posts = $this->Post->find('all', [
 			'order' => 'Post.created DESC'
 		]);
-		$this->set(compact('posts'));
+		$title_for_layout = 'Bryan Crowe';
+		$this->set(compact('post', 'title_for_layout'));
 	}
 
 	public function view($slug = null) {
@@ -47,6 +48,7 @@ class PostsController extends AppController {
 			'conditions' => ['Post.slug' => $slug],
 			'contain' => ['Comment']
 		]);
-		$this->set(compact('post'));
+		$title_for_layout = $post['Post']['title'] . ' | Bryan Crowe';
+		$this->set(compact('post', 'title_for_layout'));
 	}
 }
