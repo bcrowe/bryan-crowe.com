@@ -40,7 +40,7 @@ class PostsController extends AppController {
 			'order' => 'Post.created DESC'
 		]);
 		$title_for_layout = 'Bryan Crowe';
-		$this->set(compact('post', 'title_for_layout'));
+		$this->set(compact('posts', 'title_for_layout'));
 	}
 
 	public function view($slug = null) {
