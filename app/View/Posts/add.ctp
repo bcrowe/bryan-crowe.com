@@ -8,7 +8,7 @@
 	<div class="form-group">
 		<?php echo $this->Form->input('body', ['class' => 'form-control', 'rows' => 20]); ?>
 	</div>
-	<?php echo $this->Form->hidden('user_id', ['value' => $user['id']]); ?>
+	<?php echo $this->Form->hidden('user_id', ['value' => AuthComponent::user('id')]); ?>
 	</fieldset>
 	<?php echo $this->Form->button('Add Post', ['class' => 'btn btn-primary']); ?>
 <?php echo $this->Form->end(); ?>
