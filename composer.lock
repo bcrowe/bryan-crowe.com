@@ -3,8 +3,45 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9f7264e045500ed72974c716bb84baa4",
+    "hash": "c28334cbf701b59720a4d4c51a9ea7ce",
     "packages": [
+        {
+            "name": "cakedc/migrations",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CakeDC/migrations.git",
+                "reference": "7b9f7b58166a35678e635110a6d58fc55c7502f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/7b9f7b58166a35678e635110a6d58fc55c7502f2",
+                "reference": "7b9f7b58166a35678e635110a6d58fc55c7502f2",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "Migrations Plugin for CakePHP",
+            "homepage": "http://cakedc.com",
+            "keywords": [
+                "cakephp",
+                "migrations"
+            ],
+            "time": "2013-11-16 16:43:46"
+        },
         {
             "name": "cakephp/cakephp",
             "version": "2.4.2",
@@ -27,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "a4b0baa2929e0238a87cb080c0ee9963c5747fb1"
+                "reference": "9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/a4b0baa2929e0238a87cb080c0ee9963c5747fb1",
-                "reference": "a4b0baa2929e0238a87cb080c0ee9963c5747fb1",
+                "url": "https://api.github.com/repos/composer/installers/zipball/9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94",
+                "reference": "9a1fd4e191beaa5cab79c05f923d8bcdd01b4e94",
                 "shasum": ""
             },
             "replace": {
@@ -69,44 +106,53 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
+                "Craft",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
                 "agl",
+                "annotatecms",
                 "cakephp",
                 "codeigniter",
                 "concrete5",
+                "croogo",
                 "drupal",
+                "elgg",
                 "fuelphp",
                 "installer",
                 "joomla",
                 "kohana",
                 "laravel",
-                "li3",
                 "lithium",
+                "magento",
                 "mako",
+                "mediawiki",
                 "modulework",
                 "phpbb",
+                "piwik",
                 "ppi",
+                "shopware",
                 "silverstripe",
                 "symfony",
+                "typo3",
                 "wordpress",
-                "zend"
+                "zend",
+                "zikula"
             ],
-            "time": "2013-12-07 19:47:46"
+            "time": "2014-02-12 21:21:55"
         },
         {
             "name": "friendsofcake/crud",
-            "version": "3.0.8",
+            "version": "3.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfCake/crud.git",
-                "reference": "c8ba708278f78f0ccff1b14deb5f205434846c95"
+                "reference": "0be86cd5e8c5b868a61da02093c3b6af2c50b61c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/c8ba708278f78f0ccff1b14deb5f205434846c95",
-                "reference": "c8ba708278f78f0ccff1b14deb5f205434846c95",
+                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/0be86cd5e8c5b868a61da02093c3b6af2c50b61c",
+                "reference": "0be86cd5e8c5b868a61da02093c3b6af2c50b61c",
                 "shasum": ""
             },
             "require": {
@@ -159,7 +205,7 @@
                 "scaffolding",
                 "update"
             ],
-            "time": "2013-11-12 12:06:54"
+            "time": "2013-12-11 12:54:51"
         }
     ],
     "packages-dev": [
@@ -169,12 +215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/debug_kit.git",
-                "reference": "1fef158801a65ed7f1fe722cbaeac07cda6afbc6"
+                "reference": "9335a09cd0f8f16562a79c8eccf09fb301118550"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/1fef158801a65ed7f1fe722cbaeac07cda6afbc6",
-                "reference": "1fef158801a65ed7f1fe722cbaeac07cda6afbc6",
+                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/9335a09cd0f8f16562a79c8eccf09fb301118550",
+                "reference": "9335a09cd0f8f16562a79c8eccf09fb301118550",
                 "shasum": ""
             },
             "require": {
@@ -210,16 +256,16 @@
                 "debug",
                 "kit"
             ],
-            "time": "2013-12-03 18:23:40"
+            "time": "2014-02-06 18:59:51"
         }
     ],
     "aliases": [
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "cakedc/migrations": 20
+    },
     "platform": {
         "php": ">=5.4"
     },
