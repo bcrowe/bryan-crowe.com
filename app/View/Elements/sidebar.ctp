@@ -9,10 +9,16 @@
 				<i class="fa fa-github fa-stack-2x"></i>
 			</span>
 		</a>
+		<a href="//twitter.com/_beakman" target="_blank">
+			<span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
 		<a href="mailto:bryan@bryan-crowe.com">
 			<span class="fa-stack fa-lg">
 				<i class="fa fa-circle fa-stack-2x"></i>
-				<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+				<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
 			</span>
 		</a>
 	</div>
