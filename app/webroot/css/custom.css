@@ -6,7 +6,7 @@ body {
 	font-size: 22px;
 	color: #f8f8f8;
 	text-align: center;
-	margin: 10px 0 15px 0;
+	margin: 50px 0 20px 0;
 }
 
 #name span.last-name {
@@ -28,6 +28,13 @@ body {
 
 #external-links a:hover {
 	text-decoration: none;
+}
+
+#description {
+	width: 155px;
+	margin-top: 20px;
+	text-align: center;
+	color: #f8f8f8;
 }
 
 #posts {
