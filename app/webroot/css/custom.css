@@ -11,26 +11,7 @@ body {
 
 #name span.last-name {
 	color: #05aae5;
-}
-
-#photo {
-	margin-top: 20px;
-	text-align: center;
-}
-
-#photo img {
-	width: 155px;
-	height: 155px;
-	border: 3px solid #f8f8f8;
-}
-
-#bryan:hover {
-	cursor: pointer;
-}
-
-img.thirty-two {
-	width: 32px;
-	height: 32px;
+	font-weight: bold;
 }
 
 #external-links {

@@ -1,8 +1,5 @@
 <div id="sidebar" class="affix">
-	<div id="photo">
-		<a href="/"><img class="img-circle img-responsive" src="/img/bryan-crowe.jpg" /></a>
-	</div>
-	<h1 id="name">Bryan<span class="last-name"> Crowe</span></h1>
+	<h1 id="name">BRYAN<span class="last-name">CROWE</span></h1>
 	<div id="external-links">
 		<a href="//github.com/bcrowe" target="_blank">
 			<span class="fa-stack fa-lg">
