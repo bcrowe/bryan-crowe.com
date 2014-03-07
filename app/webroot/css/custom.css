@@ -233,7 +233,7 @@ img.dim {
 	.affix {
 		position: static;
 	}
-	
+
 	#description {
 		width: inherit;
 	}
@@ -242,5 +242,9 @@ img.dim {
 @media (max-width: 768px) {
 	#posts a.post-title {
 		font-size: 18px;
+	}
+
+	.post-row .col-xs-10 {
+		text-align: center;
 	}
 }
