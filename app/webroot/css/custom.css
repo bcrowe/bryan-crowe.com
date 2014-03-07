@@ -229,8 +229,18 @@ img.dim {
 	margin-top: 50px;
 }
 
+@media (max-width: 992px) {
+	.affix {
+		position: static;
+	}
+	
+	#description {
+		width: inherit;
+	}
+}
+
 @media (max-width: 768px) {
-    .affix {
-        position: static;
-    }
+	#posts a.post-title {
+		font-size: 18px;
+	}
 }
