@@ -19,6 +19,7 @@ body {
 }
 
 #name {
+	font-family: 'AvenirNextLTPro-Regular';
 	font-size: 22px;
 	color: #f8f8f8;
 	text-align: center;
@@ -28,7 +29,7 @@ body {
 
 #name span.last-name {
 	color: #05aae5;
-	font-weight: bold;
+	font-family: 'AvenirNextLTPro-Bold';
 }
 
 #external-links {
@@ -48,6 +49,7 @@ body {
 }
 
 #description {
+	font-family: 'AvenirNextLTPro-Regular';
 	width: 155px;
 	margin-top: 20px;
 	text-align: center;
