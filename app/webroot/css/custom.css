@@ -249,6 +249,10 @@ img.dim {
 	margin-top: 50px;
 }
 
+#sidebar a:hover {
+	text-decoration: none;
+}
+
 @media (max-width: 992px) {
 	.affix {
 		position: static;
