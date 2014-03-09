@@ -1,5 +1,5 @@
 <div id="sidebar" class="affix">
-	<h1 id="name">BRYAN<span class="last-name">CROWE</span></h1>
+	<a href="/"><h1 id="name">BRYAN<span class="last-name">CROWE</span></h1></a>
 	<div id="external-links">
 		<a href="//github.com/bcrowe" target="_blank">
 			<span class="fa-stack fa-lg">
