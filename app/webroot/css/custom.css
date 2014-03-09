@@ -1,10 +1,15 @@
 @font-face {
 	font-family: 'AvenirNextLTPro-Regular';
 	src: url('/fonts/AvenirNextLTPro-Regular.eot');
-	src: local('☺'),
-		url('/fonts/AvenirNextLTPro-Regular.woff') format('woff'),
-		url('/fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
-		url('/fonts/AvenirNextLTPro-Regular.svg') format('svg');
+	src: local('☺'), url('/fonts/AvenirNextLTPro-Regular.woff') format('woff'), url('/fonts/AvenirNextLTPro-Regular.ttf') format('truetype'), url('/fonts/AvenirNextLTPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextLTPro-Bold';
+	src: url('/fonts/AvenirNextLTPro-Bold.eot');
+	src: local('☺'), url('/fonts/AvenirNextLTPro-Bold.woff') format('woff'), url('/fonts/AvenirNextLTPro-Bold.ttf') format('truetype'), url('/fonts/AvenirNextLTPro-Bold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -54,7 +59,8 @@ body {
 }
 
 #posts a.post-title {
-	font-size: 25px;
+	font-family: 'AvenirNextLTPro-Bold';
+	font-size: 24px;
 	color: #05aae5;
 	transition: all 0.1s ease;
 	margin-bottom: 0;
@@ -95,7 +101,8 @@ div.post-row {
 }
 
 #post h2, #comments h3 {
-	font-size: 35px;
+	font-family: 'AvenirNextLTPro-Bold';
+	font-size: 34px;
 	color: #05aae5;
 	margin-bottom: 0;
 	line-height: 25px;
@@ -121,7 +128,6 @@ p {
 	font-family: 'AvenirNextLTPro-Regular';
 	font-size: 20px;
 	line-height: 34px;
-	/*letter-spacing: 1px;*/
 	color:  #f8f8f8;
 	text-align: justify;
 }
