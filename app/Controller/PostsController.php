@@ -18,22 +18,6 @@ class PostsController extends AppController {
 		$this->Auth->allow(['posts', 'view']);
 	}
 
-	public function add() {
-		$this->Crud->on('beforeSave', function ($e) {
-			$postData = $e->subject->controller->request->data;
-			$e->subject->controller->request->data['Post']['slug'] = Inflector::slug($postData['Post']['title'], '-');
-		});
-		return $this->Crud->execute();
-	}
-
-	public function edit() {
-		$this->Crud->on('beforeSave', function ($e) {
-			$postData = $e->subject->controller->request->data;
-			$e->subject->controller->request->data['Post']['slug'] = Inflector::slug($postData['Post']['title'], '-');
-		});
-		return $this->Crud->execute();
-	}
-
 	public function posts() {
 		$posts = $this->Post->find('all', [
 			'order' => 'Post.created DESC'
