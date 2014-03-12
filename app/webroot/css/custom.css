@@ -49,11 +49,15 @@ body {
 }
 
 #description {
-	font-family: 'AvenirNextLTPro-Regular';
 	width: 155px;
 	margin-top: 20px;
+}
+
+#description p {
+	font-family: 'AvenirNextLTPro-Regular';
 	text-align: center;
 	color: #f8f8f8;
+	margin-bottom: 0;
 }
 
 #posts {

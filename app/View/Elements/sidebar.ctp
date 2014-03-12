@@ -20,6 +20,6 @@
 		</a>
 	</div>
 	<div id="description">
-		Bryan Crowe is a beer-drinking open source developer living in Pittsburgh, PA. He is involved in the <a class="text-link" href="http://www.cakephp.org" target="_blank">CakePHP</a> framework.
+		<p>Bryan Crowe is a beer-drinking open source developer living in Pittsburgh, PA. He is involved in the <a class="text-link" href="http://www.cakephp.org" target="_blank">CakePHP</a> framework.</p>
 	</div>
 </div>
