@@ -1,6 +1,7 @@
 $(function() {
 
-	$(document).on('click', '#photo a', function() {
+	$(document).on('click', '#my-name ', function() {
+		event.preventDefault();
 		$('#post, #disqus-wrapper').fadeOut(200, 'swing');
 		$('video').removeClass('blurred');
 		$.get('/posts/posts', function(data) {
@@ -30,22 +31,4 @@ $(function() {
 			Rainbow.color();
 		});
 	}
-
-	$(document).on('keydown', 'textarea', function(e) {
-		var keyCode = e.keyCode || e.which;
-
-		if (keyCode == 9) {
-			e.preventDefault();
-			var start = $(this).get(0).selectionStart;
-			var end = $(this).get(0).selectionEnd;
-
-			$(this).val($(this).val().substring(0, start)
-			+ '\t'
-			+ $(this).val().substring(end));
-
-			$(this).get(0).selectionStart =
-			$(this).get(0).selectionEnd = start + 1;
-		}
-	});
-
 });
