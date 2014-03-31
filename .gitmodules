@@ -1,3 +1,0 @@
-[submodule "app/webroot/js/rainbow"]
-	path = app/webroot/js/rainbow
-	url = https://github.com/ccampbell/rainbow.git
