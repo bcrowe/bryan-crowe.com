@@ -48,5 +48,6 @@ public function initialize(array $config) {
 ?>
 {% endhighlight %}
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+For a more detailed overview, check out the [New ORM Migration Guide][orm-migration] section of the 3.0 documentation.
+
+[orm-migration]: http://book.cakephp.org/3.0/en/appendices/orm-migration.html
