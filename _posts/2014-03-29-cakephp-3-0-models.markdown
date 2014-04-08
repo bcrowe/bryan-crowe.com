@@ -35,7 +35,7 @@ On the other hand, addresssing associations between Models in CakePHP 2.x you wo
 
 {% highlight php %}
 <?php
-	public $hasMany = array('User');
+public $hasMany = array('User');
 ?>
 {% endhighlight %}
 
