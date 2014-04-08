@@ -8,8 +8,6 @@ Models in CakePHP 3.0 have been split into two seperate ideas: Tables and Entiti
 
 For example, in CakePHP 2.x you could aquaint a "virtual field" that concatenates two fields together using the "$virtualFields" property within a Model:
 
-Jekyll also offers powerful support for code snippets:
-
 {% highlight php %}
 <?php
 public $virtualFields = array(
