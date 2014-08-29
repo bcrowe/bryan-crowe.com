@@ -2,10 +2,9 @@
 layout: default
 ---
 <article class="post">
-<h2 class="post-title">{{ page.title }}</h2>
-<time class="post-time">{{ page.date | date: "%B %d, %Y" }}</p>
-
-{{ content }}
+	<h2 class="post-title">{{ page.title }}</h2>
+	<time class="post-time">{{ page.date | date: "%B %d, %Y" }}</time>
+	{{ content }}
 </article>
 
 <div id="disqus_thread"></div>
