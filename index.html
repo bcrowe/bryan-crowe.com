@@ -6,8 +6,8 @@ title: Bryan Crowe
 <div id="posts">
 {% for post in site.posts %}
 	<article class="row">
-		<time class="col-xs-3">{{ post.date | date: "%b %d, %Y" }}</time>
-		<div class="col-xs-9">
+		<time class="col-md-3 col-sm-12">{{ post.date | date: "%b %d, %Y" }}</time>
+		<div class="col-md-9 col-sm-12">
 			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		</div>
 	</article>
