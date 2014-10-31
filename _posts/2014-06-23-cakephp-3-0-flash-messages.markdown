@@ -31,5 +31,5 @@ This simply offers a way to make your code more expressive.
 
 For more information on how to use `FlashComponent` and `FlashHelper`, check out the [FlashComponent][flash-component] and [FlashHelper][flash-helper] sections of the 3.0 documentation.
 
-[flash-component]: http://book.cakephp.org/3.0/en/core-libraries/components/flash.html
-[flash-helper]: http://book.cakephp.org/3.0/en/core-libraries/helpers/flash.html
+[flash-component]: http://book.cakephp.org/3.0/en/controllers/components/flash.html
+[flash-helper]: http://book.cakephp.org/3.0/en/views/helpers/flash.html
