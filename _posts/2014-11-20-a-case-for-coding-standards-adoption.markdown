@@ -18,8 +18,10 @@ The punk rocker in all of us certainly doesn't want to bow down to "the man" and
 
 Of course there are some nomenclatures with this idea. 1) The coding standards should be reasonable and should largely only deal with language/driver constructs. This should be inherent to a governing body being a diverse representation of the community. 2) If a project is largely popular, of course you don't want to invalidate existing pull requests. In this case, we should strive to make the adoption in either the next minor version release given there are no backwards-compatible breaks introduced by the standard, or the next major version release if backwards-compatible are introduced by the standard. This is made much easier in framework-agnostic packages, where we have less overhead on releasing minor and major versions.
 
-In the context of PHP, we have a wonderful tool called PHPCS, which I imagine mostly everyone is familiar with. But, if you aren't already aware, there is an automated coding standard fixer as well, which will bring you most of the way there. [PHP-CS-Fixer][php-cs-fixer] makes updating your project to be PSR-2 compliant easy as cake.
+In the context of PHP, we have a wonderful tool called [PHPCS][phpcs], which I imagine mostly everyone is familiar with. But, if you aren't already aware, there is an automated coding standard fixer as well, which will bring you most of the way there. [PHP-CS-Fixer][php-cs-fixer] makes updating your project to be [PSR-2][psr-2] compliant easy as cake.
 
 Let's drop our personal preferences and play nicely in the community sandbox.
 
+[phpcs]: https://github.com/squizlabs/PHP_CodeSniffer
 [php-cs-fixer]: https://github.com/FriendsOfPHP/PHP-CS-Fixer
+[psr-2]: http://www.php-fig.org/psr/psr-2/
