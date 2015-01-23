@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Journey to PSR-2"
-date:   2014-01-22 23:25:00
+date:   2015-01-22 23:25:00
 ---
 
 It's not news that CakePHP 3.0 is now [PSR-2][psr-2] compliant. What started as
