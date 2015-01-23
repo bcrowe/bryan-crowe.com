@@ -29,7 +29,7 @@ of specific rule fixers between the two, but with the size of CakePHP the last
 2% required a metric fuck-ton of by-hand fixes. The solution was to run both
 tools on the code base:
 
-{% highlight shell %}
+{% highlight bash %}
 ./php-cs-fixer fix ~/cakephp-3.x/src --fixers=phpdoc_indent -vv
 ./php-cs-fixer fix ~/cakephp-3.x/tests --fixers=phpdoc_indent -vv
 ./php-cs-fixer fix ~/cakephp-3.x/src --level=psr2 -vv
