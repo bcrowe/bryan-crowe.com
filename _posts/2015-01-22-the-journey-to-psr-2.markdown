@@ -31,11 +31,8 @@ tools on the code base:
 
 {% highlight bash %}
 ./php-cs-fixer fix ~/cakephp-3.x/src --fixers=phpdoc_indent -vv
-./php-cs-fixer fix ~/cakephp-3.x/tests --fixers=phpdoc_indent -vv
 ./php-cs-fixer fix ~/cakephp-3.x/src --level=psr2 -vv
-./php-cs-fixer fix ~/cakephp-3.x/tests --level=psr2 -vv
 ./phpcbf -v --standard=psr2 --extensions=php ~/cakephp-3.x/src
-./phpcbf -v --standard=psr2 --extensions=php ~/cakephp-3.x/tests
 {% endhighlight %}
 
 You'll notice the "phpdoc_indent" fixer which is initially run. We discovered
