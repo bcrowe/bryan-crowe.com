@@ -4,7 +4,7 @@ title:  "CakePHP 3.0 Models"
 date:   2014-03-29 15:54:17
 ---
 
-Models in CakePHP 3.0 have been split into two separate ideas: Tables and Entities. A Table represents a table in your database which is reminiscent of the all-encapsulating Model classes in previous versions of CakePHP. Table classes reside within `src/Model/Table` and have took on a plural form: `class ArticlesTable extends Table` and `ArticlesTable.php`. Entities on the other hand, represent an individual row within a database table. Entities reside within `src/Model/Entity` and are in singular form: `class Article extends Entity` and `ArticleEntity.php`. This introduces a seperation of concerns.
+Models in CakePHP 3.0 have been split into two separate ideas: Tables and Entities. A Table represents a table in your database which is reminiscent of the all-encapsulating Model classes in previous versions of CakePHP. Table classes reside within `src/Model/Table` and have took on a plural form: `class ArticlesTable extends Table` and `ArticlesTable.php`. Entities on the other hand, represent an individual row within a database table. Entities reside within `src/Model/Entity` and are in singular form: `class Article extends Entity` and `ArticleEntity.php`. This introduces a separation of concerns.
 
 For example, in CakePHP 2.x you could acquaint a "virtual field" that concatenates two fields together using the `$virtualFields` property within a Model:
 
