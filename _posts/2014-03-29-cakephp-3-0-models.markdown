@@ -37,7 +37,7 @@ public $belongsTo = array('User');
 ?>
 {% endhighlight %}
 
-But, definfing associations between Models in CakePHP 3.0 is done through Table's `initialize()` method:
+But, defining associations between Models in CakePHP 3.0 is done through Table's `initialize()` method:
 
 
 {% highlight php %}
