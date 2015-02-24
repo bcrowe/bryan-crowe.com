@@ -20,7 +20,7 @@ But, to aquaint a "virtual field" in CakePHP 3.0, you would define an accessor m
 
 {% highlight php %}
 <?php
-public function getFullName() {
+protected function _getFullName() {
 	return $this->_properties['first_name'] . '  ' .
 	$this->_properties['last_name'];
 }
