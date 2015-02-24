@@ -22,7 +22,7 @@ But, to aquaint a "virtual field" in CakePHP 3.0, you would define an accessor m
 <?php
 protected function _getFullName() {
 	return $this->_properties['first_name'] . '  ' .
-	$this->_properties['last_name'];
+		$this->_properties['last_name'];
 }
 ?>
 {% endhighlight %}
@@ -33,7 +33,7 @@ On the other hand, addressing associations between Models in CakePHP 2.x you wou
 
 {% highlight php %}
 <?php
-public $belongsTo = array('User');
+public $belongsTo = ['User'];
 ?>
 {% endhighlight %}
 
