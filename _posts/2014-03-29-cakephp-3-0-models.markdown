@@ -20,7 +20,8 @@ But, to aquaint a "virtual field" in CakePHP 3.0, you would define an accessor m
 
 {% highlight php %}
 <?php
-protected function _getFullName() {
+protected function _getFullName()
+{
 	return $this->_properties['first_name'] . '  ' .
 		$this->_properties['last_name'];
 }
@@ -42,7 +43,8 @@ But, defining associations between Models in CakePHP 3.0 is done through Table's
 
 {% highlight php %}
 <?php
-public function initialize(array $config) {
+public function initialize(array $config)
+{
 	$this->belongsTo('Users');
 }
 ?>
