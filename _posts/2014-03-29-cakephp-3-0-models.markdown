@@ -16,10 +16,12 @@ public $virtualFields = array(
 ?>
 {% endhighlight %}
 
-But, to aquaint a "virtual field" in CakePHP 3.0, you would define an accessor method within your Entity such as:
+But, to aquaint an exposed "virtual field" in CakePHP 3.0, you would define an accessor method within your Entity, and expose within the `$_virtual` property, such as:
 
 {% highlight php %}
 <?php
+protected $_virtual = ['full_name'];
+
 protected function _getFullName()
 {
 	return $this->_properties['first_name'] . '  ' .
