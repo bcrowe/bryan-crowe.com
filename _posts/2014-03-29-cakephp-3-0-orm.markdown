@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CakePHP 3.0 Models"
+title:  "CakePHP 3.0 ORM"
 date:   2014-03-29 15:54:17
 ---
 
