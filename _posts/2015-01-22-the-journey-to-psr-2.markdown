@@ -39,7 +39,7 @@ You'll notice the "phpdoc_indent" fixer which is initially run. We discovered
 that docblocks weren't being indented correctly with PHP-CS-Fixer, which led to
 an [issue][phpdoc-indent-issue] filed by Mark Scherer and a new
 [fixer added][phpdoc-indent-pr] by Marc Yypes. Shortly after, we learned that
-PHPCBF correctly handled docblock indentations adding the `--tab-width=4` flag.
+PHPCBF correctly handled docblock indentations adding the --tab-width=4 flag.
 
 In summation, either of the coding standard fixer tools will bring mostly any
 project to PSR-2 compliance with little effort involved. It is only whenever you
