@@ -30,9 +30,14 @@ of specific rule fixers between the two, but with the size of CakePHP the last
 tools on the code base:
 
 {% highlight bash %}
-./php-cs-fixer fix ~/cakephp-3.x/src --fixers=phpdoc_indent -vv
-./php-cs-fixer fix ~/cakephp-3.x/src --level=psr2 -vv
-./phpcbf -v --standard=psr2 --extensions=php ~/Projects/cakephp/src
+composer global require squizlabs/php_codesniffer
+composer global require fabpot/php-cs-fixer
+
+echo 'export PATH=~/.composer/vendor/bin:$PATH' >> ~/.(bash_profile or zshrc)
+
+php-cs-fixer fix ~/Projects/cakephp/src --fixers=phpdoc_indent -vv
+php-cs-fixer fix ~/Projects/cakephp/src --level=psr2 -vv
+phpcbf -v --standard=psr2 --extensions=php ~/Projects/cakephp/src
 {% endhighlight %}
 
 You'll notice the "phpdoc_indent" fixer which is initially run. We discovered
