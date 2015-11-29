@@ -21,7 +21,8 @@ school yearbook. Furthermore, coding standards aren't features, or make your
 code more performant. With this in mind, we can safely say coding standards do
 not add any value in achieving a project's substantive end-goal.
 
-"Okay, so you've just said they don't add any real value, so why should we care?"
+"Okay, so you've just said they don't add any real value, so why should we care?
+"
 
 Bike-shedding sucks. No one enjoys bike-shedding, and if you do, you're either a
 troll or an asshole, or both. Coding standards are a bike-shedder's dream and
