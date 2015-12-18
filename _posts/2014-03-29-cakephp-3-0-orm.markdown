@@ -19,7 +19,7 @@ two fields together using the virtualFields property within a Model:
 {% highlight php %}
 <?php
 public $virtualFields = array(
-	'full_name' => 'CONCAT(User.first_name, " ", User.last_name)'
+    'full_name' => 'CONCAT(User.first_name, " ", User.last_name)'
 );
 ?>
 {% endhighlight %}
@@ -34,8 +34,8 @@ protected $_virtual = ['full_name'];
 
 protected function _getFullName()
 {
-	return $this->_properties['first_name'] . '  ' .
-		$this->_properties['last_name'];
+    return $this->_properties['first_name'] . '  ' .
+        $this->_properties['last_name'];
 }
 ?>
 {% endhighlight %}
@@ -61,7 +61,7 @@ initialize() method:
 <?php
 public function initialize(array $config)
 {
-	$this->belongsTo('Users');
+    $this->belongsTo('Users');
 }
 ?>
 {% endhighlight %}
