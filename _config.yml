@@ -1,4 +1,4 @@
 name: Bryan Crowe
 markdown: kramdown
-pygments: true
+highlighter: true
 url: http://www.bryan-crowe.com
