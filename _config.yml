@@ -1,4 +1,4 @@
 name: Bryan Crowe
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 url: http://www.bryan-crowe.com
